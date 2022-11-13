@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Write</title>
+   <link href="write.css" rel="stylesheet" type="text/css" />
+
+<!--   importing font -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+</style> 
+  
+</head>
+<body>
+
+  <h2>
+    My Journal Entry Prompt: 
+  </h2>
+  <div id="test"></div>
+  
+  <div id="buttons" style="text-align:center">  <button id="changebovine"> Generate New Prompt </button>    </div>
+
+<script>          
+
+var test = document.getElementById("test");    
+
+test.innerHTML = "What are your strengths in friendships & relationships?";
+
+function change() {  
+  let prompts = ["Talk About Your Day", "Identify Things You’re Grateful For","Write a List of Your Coping Mechanisms","Describe a Goal","Write About How Different You Were 5 Years Ago", "Write a Letter to Your Body", "List and Describe Your Emotions","Write About How You’d Describe Yourself to a Stranger", "Describe the Best Compliment You’ve Ever Gotten","Write a Message for Yourself on Bad Days"];
+  let randInd = Math.floor(prompts.length * Math.random());
+  test.innerHTML = prompts[randInd];
+}
+
+var changebovine = document.getElementById("changebovine");         
+changebovine.onclick = function () {change();};   
+
+</script>
+</script>
+
+  <div class = "entry">
+
+  <form journal = "journal submission">
+         <h3>
+           Jot your thoughts down here: 
+         </h3>
+         <br>
+         <textarea rows = "10" cols = "100" name = "journalEntry">
+            
+         </textarea><br>
+        
+  </form>
+  <br></br>
+
+  <h3>How are you feeling today?</h3>
+  
+  <div id = "feelingSelection">
+    <input type="radio" id="happy" name="Emoji" value="Happy">
+     <label for = "Happy">Happy! 😄</label><br>
+    <input type="radio" id="sad" name="Emoji" value="Sad">
+     <label>Sad 😭</label><br>
+     <input type="radio" id="grateful" name="Emoji"         
+      value="Grateful">
+     <label>Grateful 🥳</label><br>
+    <input type="radio" id="frustrated" name="Emoji"         
+      value="Frustrated">
+     <label>Frustrated 😩 </label><br>  
+    <input type="radio" id="frustrated" name="Emoji"         
+      value="Other">
+     <label>Other 😐 </label><br>  
+  </div> 
+
+  <div class = "finishEntry">
+  <button id = "entry">Save Today's Entry</button>
+  <button id = "entry">Publish Entry</button>
+  </div>
+
+  OR, upload a file to publish
+  <form action="/action_page.php">
+  <label for="myfile"></label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <div id = "submit">
+    <button>Submit</button>
+  </div>
+  
+</form>
+
+  </div>
+  
+  
+  
+  <script src="script.js"></script>
+  
+
+</body>
+
+</html>

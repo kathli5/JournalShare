@@ -1,0 +1,78 @@
+body {
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(#905557, white);
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+}
+
+h2{
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5vh;
+  text-shadow: 2px 2px 2px #827081;
+}
+
+#feelingSelection {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.diary{ 
+  color: #905557;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  transition: 0.5s;
+  padding: 40px 60px;
+  border-radius: 12px;
+}
+
+.diary:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 45px;
+  }
+
+button:focus {
+    border-radius: 45px;
+    background-color: #C3B1E1; 
+  color: white;
+}
+
+.sentence{
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5vh;
+  text-shadow: 2px 2px 2px #827081;
+}
+
+#filteredPosts {
+  padding-left: 5vh;
+}
+
+p{
+  padding-left: 5vh;
+}
+
+h4{
+  padding-left: 5vh;
+}
+
+.finishEntry{
+  display: block;
+  padding-left: 5vh;
+}
+
+
+
+#entry{
+  width: 20%;
+  text-align: center;
+}

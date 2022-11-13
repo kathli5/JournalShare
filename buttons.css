@@ -1,0 +1,52 @@
+body {
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(#905557, white);
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+}
+
+.diaryButtons {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.diary{ 
+  color: #905557;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  transition: 0.5s;
+  padding: 50px 100px;
+  border-radius: 12px;
+
+}
+
+figcaption {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.resources {
+  font-size: 5px;
+  transition: 0.5s;
+  padding: 20px 50px;
+  top: 50%;
+  display: block;
+}
+
+.diary:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 45px;
+  }
+
+.button a{
+  text-decoration: none;
+}

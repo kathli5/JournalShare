@@ -1,0 +1,61 @@
+body {
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(#905557, white);
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+}
+
+h2{
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5vh;
+  text-shadow: 2px 2px 2px #827081;
+}
+
+button {
+  color: white;
+  width: 60%;
+  margin: 30px 0;
+  padding: 10px;
+  height: 50px;
+  border: 1px solid;
+  background: #C3B1E1;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+#test {
+  padding-left: 5vh;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+.entry {
+  padding-left: 5vh;
+}
+
+form{
+  color: white;
+}
+
+.finishEntry{
+  display: block;
+}
+
+#entry{
+  width: 20%;
+}
+
+#submit{
+  text-align: center;
+}
+
+h3{
+  color: black;
+}
+
